@@ -19,8 +19,8 @@ import lombok.Setter;
 public class ProductDB {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected int id;
-    protected String name;
-    protected double price;
-    protected String description;
+    private int id;
+    private String name;
+    private double price;
+    private String description;
 }
