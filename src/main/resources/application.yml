@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        url: ${DB_URL:jdbc:postgresql://localhost:5432/soapservice}
+        username: ${DB_USERNAME:postgres}
+        password: ${DB_PASSWORD:admin}
+
+    jpa:
+        generate-ddl: false
+        hibernate:
+            ddl-auto: update
+
+    application:
+        name: ${APP_NAME:soapservice}
+
+server:
+  port: ${PORT:8080}
